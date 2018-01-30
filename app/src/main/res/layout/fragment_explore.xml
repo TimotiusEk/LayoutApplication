@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.google.layoutapplication.ExploreFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       android:src="@drawable/p10"
+       android:adjustViewBounds="true"
+       android:layout_alignParentTop="true"
+       android:scaleType="fitXY"
+       android:id="@+id/food_bg_fragment_explore"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#73000000"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/category_icon_2"
+        android:src="@drawable/ic_access_time_white_18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salads"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/category_name_2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/category_icon_2"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:id="@+id/category_desc_2"
+        android:layout_centerHorizontal="true"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+        android:layout_below="@+id/category_name_2"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <com.wenchao.cardstack.CardStack
+        android:id="@+id/card_stack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:padding="5dp"
+        app:card_enable_loop="true"
+        app:card_enable_rotation="true"
+        app:card_gravity="top"
+        app:card_margin="10dp"
+        app:card_stack_size="4"
+        android:layout_below="@+id/food_bg_fragment_explore"
+        android:layout_marginTop="50dp"
+        />
+
+
+
+</RelativeLayout>

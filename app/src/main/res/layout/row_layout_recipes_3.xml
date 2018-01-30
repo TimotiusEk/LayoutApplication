@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/food_bg_3"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/p1" />
+
+            <ImageButton
+                android:id="@+id/circle_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/food_bg_3"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="-40dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_local_dining_white_18dp" />
+
+            <TextView
+                android:id="@+id/food_name_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/food_bg_3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Nam dapibus nisi vitae"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/food_type_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/food_name_3"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="20dp"
+                android:text="Breakfast"
+                android:textColor="#979da8" />
+
+            <TextView
+                android:id="@+id/food_description_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/food_type_3"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="20dp"
+                android:maxLines="2"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textColor="#999999" />
+
+            <View
+                android:id="@+id/grey_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/food_description_3"
+                android:background="#e1e7e8" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_pic_3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/grey_line"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/p8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grey_line"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/profile_pic_3"
+                android:text="Alexandra Jones"
+                android:id="@+id/username_3"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/grey_line"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_bubble_chat"
+                android:id="@+id/ic_chat"
+                android:layout_toStartOf="@+id/chats_number_3"
+                android:layout_marginEnd="5dp"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/grey_line"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/heart_icon"
+                android:id="@+id/ic_like"
+                android:layout_toStartOf="@+id/likes_number_3"
+                android:layout_marginEnd="5dp"
+                />
+
+            <TextView
+                android:id="@+id/likes_number_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grey_line"
+                android:layout_marginTop="20dp"
+                android:layout_toStartOf="@+id/ic_chat"
+                android:layout_marginEnd="15dp"
+                android:text="152"/>
+
+            <TextView
+                android:id="@+id/chats_number_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:text="20"
+                android:layout_below="@+id/grey_line"
+                android:layout_marginTop="20dp"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.layoutapplication.RecipeFragment"
+   >
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_recipe"
+        android:layout_below="@+id/next_layout_btn"
+       />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Next"
+        android:id="@+id/next_layout_btn"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/holo_blue_light"
+        />
+
+</RelativeLayout>

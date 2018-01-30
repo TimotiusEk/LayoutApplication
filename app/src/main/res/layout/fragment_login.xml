@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_in_out"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.layoutapplication.SignInOutActivity"
+    android:background="#edf7ff">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="#F1F5F8">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_marginTop="40dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/rect_text_edit"
+                android:padding="10dp"
+                />
+            <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+                android:id="@+id/simplePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/rect_text_edit"
+                android:layout_marginTop="15dp"
+                android:inputType="textPassword"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GO"
+                android:textColor="@android:color/white"
+                android:background="#FF6C00"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="FACEBOOK"
+        android:textColor="@android:color/white"
+        android:background="#3F569A"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>
